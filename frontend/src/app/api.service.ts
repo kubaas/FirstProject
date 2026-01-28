@@ -10,11 +10,19 @@ export class ApiService {
   constructor(private readonly http: HttpClient) {}
 
   private getBaseUrl(): string {
-    // In production, use relative URL - Render will proxy to backend
-    // In development, use localhost
-    if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+    const hostname = location.hostname;
+    
+    // Development
+    if (hostname === 'localhost' || hostname === '127.0.0.1') {
       return 'http://localhost:8080/api';
     }
+    
+    // GitHub Pages + Replit Backend
+    if (hostname.includes('github.io')) {
+      return 'https://FirstProject.kubaas.replit.dev/api';
+    }
+    
+    // Render or other production
     return '/api';
   }
 
