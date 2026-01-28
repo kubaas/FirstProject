@@ -1,0 +1,135 @@
+[
+  {
+    "id": "5d4d7e8b-8f9f-4b0f-9a52-0a7ac7e9dd01",
+    "name": "Jajecznica z warzywami i fetą",
+    "suggestedMealType": "BREAKFAST",
+    "prepMinutes": 12,
+    "tags": ["imo", "high_protein", "low_gi", "quick"],
+    "calories": 430,
+    "proteinG": 28,
+    "carbsG": 12,
+    "fatG": 28
+  },
+  {
+    "id": "5d4d7e8b-8f9f-4b0f-9a52-0a7ac7e9dd02",
+    "name": "Skyr z orzechami i malinami",
+    "suggestedMealType": "BREAKFAST",
+    "prepMinutes": 5,
+    "tags": ["imo", "high_protein", "low_gi", "quick"],
+    "calories": 380,
+    "proteinG": 35,
+    "carbsG": 22,
+    "fatG": 14
+  },
+  {
+    "id": "5d4d7e8b-8f9f-4b0f-9a52-0a7ac7e9dd03",
+    "name": "Omlet owsiany (mała porcja) z twarogiem",
+    "suggestedMealType": "BREAKFAST",
+    "prepMinutes": 15,
+    "tags": ["imo", "high_protein", "moderate_carb", "low_gi"],
+    "calories": 480,
+    "proteinG": 34,
+    "carbsG": 35,
+    "fatG": 20
+  },
+  {
+    "id": "5d4d7e8b-8f9f-4b0f-9a52-0a7ac7e9dd04",
+    "name": "Sałatka z kurczakiem, oliwą i warzywami",
+    "suggestedMealType": "LUNCH",
+    "prepMinutes": 20,
+    "tags": ["imo", "high_protein", "low_carb", "meal_prep"],
+    "calories": 520,
+    "proteinG": 45,
+    "carbsG": 18,
+    "fatG": 28
+  },
+  {
+    "id": "5d4d7e8b-8f9f-4b0f-9a52-0a7ac7e9dd05",
+    "name": "Bowl: łosoś + kasza gryczana + brokuł",
+    "suggestedMealType": "LUNCH",
+    "prepMinutes": 25,
+    "tags": ["imo", "high_protein", "low_gi", "balanced"],
+    "calories": 610,
+    "proteinG": 42,
+    "carbsG": 45,
+    "fatG": 28
+  },
+  {
+    "id": "5d4d7e8b-8f9f-4b0f-9a52-0a7ac7e9dd06",
+    "name": "Indyk w warzywach + ryż basmati (mała porcja)",
+    "suggestedMealType": "LUNCH",
+    "prepMinutes": 30,
+    "tags": ["imo", "high_protein", "moderate_carb", "low_gi"],
+    "calories": 590,
+    "proteinG": 48,
+    "carbsG": 52,
+    "fatG": 18
+  },
+  {
+    "id": "5d4d7e8b-8f9f-4b0f-9a52-0a7ac7e9dd07",
+    "name": "Chili con carne (fasola + wołowina) — bez pieczywa",
+    "suggestedMealType": "DINNER",
+    "prepMinutes": 35,
+    "tags": ["imo", "high_protein", "high_fiber", "meal_prep"],
+    "calories": 620,
+    "proteinG": 46,
+    "carbsG": 38,
+    "fatG": 30
+  },
+  {
+    "id": "5d4d7e8b-8f9f-4b0f-9a52-0a7ac7e9dd08",
+    "name": "Twaróg + warzywa + oliwa (kolacja białkowa)",
+    "suggestedMealType": "DINNER",
+    "prepMinutes": 8,
+    "tags": ["imo", "high_protein", "low_carb", "quick"],
+    "calories": 420,
+    "proteinG": 44,
+    "carbsG": 10,
+    "fatG": 20
+  },
+  {
+    "id": "5d4d7e8b-8f9f-4b0f-9a52-0a7ac7e9dd09",
+    "name": "Sałatka: tuńczyk + jajko + warzywa",
+    "suggestedMealType": "DINNER",
+    "prepMinutes": 12,
+    "tags": ["imo", "high_protein", "low_carb", "quick"],
+    "calories": 470,
+    "proteinG": 44,
+    "carbsG": 14,
+    "fatG": 24
+  },
+  {
+    "id": "5d4d7e8b-8f9f-4b0f-9a52-0a7ac7e9dd10",
+    "name": "Tofu stir-fry z warzywami",
+    "suggestedMealType": "DINNER",
+    "prepMinutes": 20,
+    "tags": ["imo", "vegetarian", "high_protein", "low_gi"],
+    "calories": 540,
+    "proteinG": 32,
+    "carbsG": 28,
+    "fatG": 32
+  },
+  {
+    "id": "5d4d7e8b-8f9f-4b0f-9a52-0a7ac7e9dd11",
+    "name": "Zupa krem z soczewicy (gęsta, białkowa)",
+    "suggestedMealType": "LUNCH",
+    "prepMinutes": 30,
+    "tags": ["imo", "high_fiber", "vegetarian", "balanced", "meal_prep"],
+    "calories": 560,
+    "proteinG": 30,
+    "carbsG": 62,
+    "fatG": 18
+  },
+  {
+    "id": "5d4d7e8b-8f9f-4b0f-9a52-0a7ac7e9dd12",
+    "name": "Kanapki: chleb żytni + pasta jajeczna + warzywa",
+    "suggestedMealType": "BREAKFAST",
+    "prepMinutes": 10,
+    "tags": ["imo", "moderate_carb", "low_gi", "quick"],
+    "calories": 520,
+    "proteinG": 28,
+    "carbsG": 48,
+    "fatG": 22
+  }
+]
+

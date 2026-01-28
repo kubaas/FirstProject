@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/"
+             xmlns:camunda="http://camunda.org/schema/1.0/dmn"
+             id="Definitions_plan_adjustments"
+             name="Plan Adjustments"
+             namespace="http://example.com/imo/dmn">
+
+  <decision id="plan_adjustments" name="Plan adjustments">
+    <decisionTable id="DecisionTable_1" hitPolicy="FIRST">
+
+      <input id="Input_1" label="Compliance">
+        <inputExpression id="InputExpression_1" typeRef="double">
+          <text>complianceScore</text>
+        </inputExpression>
+      </input>
+
+      <input id="Input_2" label="Evening hunger">
+        <inputExpression id="InputExpression_2" typeRef="double">
+          <text>hungerEvening</text>
+        </inputExpression>
+      </input>
+
+      <input id="Input_3" label="Energy after meals">
+        <inputExpression id="InputExpression_3" typeRef="double">
+          <text>energyAfterMeals</text>
+        </inputExpression>
+      </input>
+
+      <input id="Input_4" label="Sleep">
+        <inputExpression id="InputExpression_4" typeRef="double">
+          <text>sleepScore</text>
+        </inputExpression>
+      </input>
+
+      <input id="Input_5" label="Cravings">
+        <inputExpression id="InputExpression_5" typeRef="double">
+          <text>cravings</text>
+        </inputExpression>
+      </input>
+
+      <output id="Output_1" label="Strategy" name="strategy" typeRef="string" />
+
+      <rule id="Rule_1">
+        <inputEntry id="InputEntry_1_1"><text>-</text></inputEntry>
+        <inputEntry id="InputEntry_1_2"><text>&gt;= 0.7</text></inputEntry>
+        <inputEntry id="InputEntry_1_3"><text>-</text></inputEntry>
+        <inputEntry id="InputEntry_1_4"><text>-</text></inputEntry>
+        <inputEntry id="InputEntry_1_5"><text>-</text></inputEntry>
+        <outputEntry id="OutputEntry_1"><text>"EVENING_HUNGER"</text></outputEntry>
+      </rule>
+
+      <rule id="Rule_2">
+        <inputEntry id="InputEntry_2_1"><text>&lt;= 0.5</text></inputEntry>
+        <inputEntry id="InputEntry_2_2"><text>-</text></inputEntry>
+        <inputEntry id="InputEntry_2_3"><text>-</text></inputEntry>
+        <inputEntry id="InputEntry_2_4"><text>-</text></inputEntry>
+        <inputEntry id="InputEntry_2_5"><text>-</text></inputEntry>
+        <outputEntry id="OutputEntry_2"><text>"QUICK"</text></outputEntry>
+      </rule>
+
+      <rule id="Rule_3">
+        <inputEntry id="InputEntry_3_1"><text>-</text></inputEntry>
+        <inputEntry id="InputEntry_3_2"><text>-</text></inputEntry>
+        <inputEntry id="InputEntry_3_3"><text>-</text></inputEntry>
+        <inputEntry id="InputEntry_3_4"><text>-</text></inputEntry>
+        <inputEntry id="InputEntry_3_5"><text>&gt;= 0.7</text></inputEntry>
+        <outputEntry id="OutputEntry_3"><text>"HIGH_PROTEIN"</text></outputEntry>
+      </rule>
+
+      <rule id="Rule_4">
+        <inputEntry id="InputEntry_4_1"><text>-</text></inputEntry>
+        <inputEntry id="InputEntry_4_2"><text>-</text></inputEntry>
+        <inputEntry id="InputEntry_4_3"><text>-</text></inputEntry>
+        <inputEntry id="InputEntry_4_4"><text>-</text></inputEntry>
+        <inputEntry id="InputEntry_4_5"><text>-</text></inputEntry>
+        <outputEntry id="OutputEntry_4"><text>"BASE"</text></outputEntry>
+      </rule>
+
+    </decisionTable>
+  </decision>
+</definitions>
+
