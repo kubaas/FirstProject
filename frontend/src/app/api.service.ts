@@ -11,6 +11,7 @@ export class ApiService {
 
   private getBaseUrl(): string {
     const hostname = location.hostname;
+    const port = location.port;
     
     // Development
     if (hostname === 'localhost' || hostname === '127.0.0.1') {
