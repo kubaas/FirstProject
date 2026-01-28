@@ -18,12 +18,13 @@ import { RouterLink, RouterOutlet } from '@angular/router';
           <a routerLink="/checkin">Check-in</a>
         </div>
       </div>
-      <router-outlet />
+      <router-outlet></router-outlet>
       <div class="muted" style="margin-top: 18px; font-size: 12px;">
         Uwaga: to nie jest porada lekarska. Jeśli masz leki/choroby współistniejące, konsultuj zmiany z lekarzem/dietetykiem.
       </div>
     </div>
   `,
+  styleUrls: [],
 })
 export class AppComponent {}
 

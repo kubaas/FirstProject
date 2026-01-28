@@ -15,16 +15,19 @@ spring:
         jdbc:
           time_zone: UTC
 
-camunda:
-  bpm:
-    admin-user:
-      id: demo
-      password: demo
-      firstName: Demo
-    filter:
-      create: All tasks
+#camunda:
+#  bpm:
+#    metrics:
+#      enabled: false
+#      db-reporter-activate: false
+#    history-level: ACTIVITY
+#    admin-user:
+#      id: demo
+#      password: demo
+#      firstName: Demo
+#    filter:
+#      create: All tasks
 
 imo:
   recipes:
     catalogResource: classpath:recipes/catalog.json
-

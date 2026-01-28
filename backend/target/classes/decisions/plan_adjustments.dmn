@@ -5,7 +5,7 @@
              name="Plan Adjustments"
              namespace="http://example.com/imo/dmn">
 
-  <decision id="plan_adjustments" name="Plan adjustments">
+  <decision id="plan_adjustments" name="Plan adjustments" camunda:historyTimeToLive="P90D">
     <decisionTable id="DecisionTable_1" hitPolicy="FIRST">
 
       <input id="Input_1" label="Compliance">

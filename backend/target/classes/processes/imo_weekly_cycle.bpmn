@@ -8,7 +8,7 @@
                   id="Definitions_imo_weekly"
                   targetNamespace="http://example.com/imo">
 
-  <bpmn:process id="imo_weekly_cycle" name="IMO Weekly Cycle" isExecutable="true">
+  <bpmn:process id="imo_weekly_cycle" name="IMO Weekly Cycle" isExecutable="true" camunda:historyTimeToLive="P90D">
     <bpmn:startEvent id="StartEvent_1" name="Check-in submitted"/>
     <bpmn:sequenceFlow id="Flow_1" sourceRef="StartEvent_1" targetRef="Task_AdjustPlan"/>
 
