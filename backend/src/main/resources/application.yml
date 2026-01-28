@@ -1,11 +1,11 @@
 server:
-  port: 8080
+  port: ${PORT:8080}
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/imo
-    username: imo
-    password: imo
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/imo}
+    username: ${SPRING_DATASOURCE_USERNAME:imo}
+    password: ${SPRING_DATASOURCE_PASSWORD:imo}
   jpa:
     hibernate:
       ddl-auto: update

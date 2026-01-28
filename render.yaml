@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: imo-backend
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        fromDatabase:
+          name: imo_db
+          property: connectionString
+      - key: SPRING_DATASOURCE_USERNAME
+        fromDatabase:
+          name: imo_db
+          property: user
+      - key: SPRING_DATASOURCE_PASSWORD
+        fromDatabase:
+          name: imo_db
+          property: password
+    healthCheckPath: /api/health
+
+  - type: web
+    name: imo-frontend
+    env: docker
+    dockerfilePath: ./frontend/Dockerfile
+    envVars:
+      - key: BACKEND_URL
+        value: https://imo-backend.onrender.com
+
+databases:
+  - name: imo_db
+    databaseName: imo
+    user: imo_user
