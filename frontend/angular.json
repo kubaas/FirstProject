@@ -53,6 +53,9 @@
       }
     }
   },
-  "defaultProject": "imo-frontend"
+  "defaultProject": "imo-frontend",
+  "cli": {
+    "analytics": false
+  }
 }
 

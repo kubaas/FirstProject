@@ -58,7 +58,7 @@ public class UserOnboardingService {
             .setVariables(vars)
             .executeWithVariablesInReturn();
 
-    String planIdStr = (String) pi.getVariables().getValue("planId");
+    String planIdStr = pi.getVariables().getValue("planId", String.class);
     if (planIdStr == null || planIdStr.isBlank()) {
       throw new IllegalStateException("Onboarding process did not return planId");
     }
