@@ -48,6 +48,13 @@
       <artifactId>postgresql</artifactId>
     </dependency>
 
+    <!-- H2 Database (for free tier deployment) -->
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+
     <!-- Camunda Platform with Spring Boot 3.x (full Jakarta support) -->
     <dependency>
       <groupId>org.camunda.bpm.springboot</groupId>
