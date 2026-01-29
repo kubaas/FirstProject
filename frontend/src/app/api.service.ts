@@ -13,7 +13,7 @@ export class ApiService {
     const hostname = location.hostname;
     const port = location.port;
     
-    // Development
+    // Development localhost - use local backend on 8080
     if (hostname === 'localhost' || hostname === '127.0.0.1') {
       return 'http://localhost:8080/api';
     }
